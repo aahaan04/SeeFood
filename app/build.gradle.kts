@@ -13,8 +13,8 @@ val lpFile = rootProject.file("local.properties")
 if (lpFile.exists()) {
     lpFile.inputStream().use { localProps.load(it) }
 }
-val openAiKey: String = localProps.getProperty("OPENAI_API_KEY")
-    ?: System.getenv("OPENAI_API_KEY")
+val groqApiKey: String = localProps.getProperty("GROQ_API_KEY")
+    ?: System.getenv("GROQ_API_KEY")
     ?: ""
 
 android {
@@ -30,8 +30,8 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables { useSupportLibrary = true }
 
-        // Generates BuildConfig.OPENAI_API_KEY
-        buildConfigField("String", "OPENAI_API_KEY", "\"$openAiKey\"")
+        // Generates BuildConfig.GROQ_API_KEY
+        buildConfigField("String", "GROQ_API_KEY", "\"$groqApiKey\"")
     }
 
     buildFeatures {

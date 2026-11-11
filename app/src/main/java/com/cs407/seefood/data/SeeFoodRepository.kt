@@ -6,7 +6,7 @@ import com.cs407.seefood.network.Recipe
 
 class SeeFoodRepository {
 
-    private val llmClient = LlmRecipeClient(BuildConfig.OPENAI_API_KEY)
+    private val llmClient = LlmRecipeClient(BuildConfig.GROQ_API_KEY)
 
     suspend fun suggestRecipesFrom(ingredients: List<String>): List<Recipe> {
         return llmClient.suggest(ingredients)
