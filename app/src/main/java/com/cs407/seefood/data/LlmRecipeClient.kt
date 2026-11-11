@@ -1,8 +1,8 @@
 package com.cs407.seefood.data
 
 import android.util.Log
-import com.cs407.seefood.network.NutritionInfo
-import com.cs407.seefood.network.Recipe
+import com.cs407.seefood.model.NutritionInfo
+import com.cs407.seefood.model.Recipe
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import kotlinx.serialization.builtins.ListSerializer

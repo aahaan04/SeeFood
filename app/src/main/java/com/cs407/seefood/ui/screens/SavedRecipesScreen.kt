@@ -30,7 +30,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.cs407.seefood.network.Recipe
+import com.cs407.seefood.model.Recipe
 import com.cs407.seefood.ui.SeeFoodViewModel
 
 @Composable

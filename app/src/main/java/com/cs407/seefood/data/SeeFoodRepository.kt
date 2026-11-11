@@ -1,8 +1,8 @@
 package com.cs407.seefood.data
 
 import com.cs407.seefood.BuildConfig
-import com.cs407.seefood.network.NutritionInfo
-import com.cs407.seefood.network.Recipe
+import com.cs407.seefood.model.NutritionInfo
+import com.cs407.seefood.model.Recipe
 
 class SeeFoodRepository {
 

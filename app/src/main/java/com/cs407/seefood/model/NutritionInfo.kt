@@ -1,4 +1,4 @@
-package com.cs407.seefood.network
+package com.cs407.seefood.model
 
 import kotlinx.serialization.Serializable
 

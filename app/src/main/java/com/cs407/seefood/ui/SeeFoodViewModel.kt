@@ -9,7 +9,7 @@ import androidx.compose.runtime.setValue
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.cs407.seefood.data.SeeFoodRepository
-import com.cs407.seefood.network.Recipe
+import com.cs407.seefood.model.Recipe
 import com.cs407.seefood.notifications.DailyReminderWorker
 import com.cs407.seefood.ui.data.DailyGoalsDataStore
 import com.google.firebase.FirebaseApp
