@@ -62,10 +62,6 @@ android {
 
 dependencies {
 
-    // Firebase Auth
-    implementation(platform("com.google.firebase:firebase-bom:33.1.1"))
-    implementation("com.google.firebase:firebase-auth")
-
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.compose.ui)
     implementation(libs.androidx.compose.ui.graphics)
@@ -80,10 +76,9 @@ dependencies {
 
     implementation(libs.androidx.navigation.compose)
 
-    implementation(libs.retrofit.core)
+    implementation(libs.okhttp.core)
     implementation(libs.okhttp.logging)
     implementation(libs.kotlinx.serialization.json)
-    implementation(libs.retrofit.kotlinx.serialization.converter)
 
     implementation(libs.coil.compose)
 
@@ -94,13 +89,12 @@ dependencies {
 
     // ML Kit
     implementation("com.google.mlkit:image-labeling:17.0.9")
-    implementation("com.google.mlkit:object-detection:17.0.2")
-    implementation("com.google.mlkit:image-labeling-custom:17.0.3")
-    implementation("com.google.mlkit:barcode-scanning:17.3.0")
 
     implementation("androidx.compose.material:material-icons-extended")
 
+    // Firebase
     implementation(platform("com.google.firebase:firebase-bom:33.4.0"))
+    implementation("com.google.firebase:firebase-auth")
     implementation("com.google.firebase:firebase-auth-ktx")
     implementation("com.google.firebase:firebase-firestore-ktx")
     implementation("androidx.work:work-runtime-ktx:2.9.0")
